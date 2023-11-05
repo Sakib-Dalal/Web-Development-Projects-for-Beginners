@@ -1,20 +1,21 @@
 /* Write your code here: */
-h1, h2{
+/* Group Rule */
+h1,h2{
     color: blueviolet;
 }
-
+/* Child Rule */
 .box > p{
     color: firebrick;
 }
-
+/* Descendent Rule */
 .box li{
     color: blue;
 }
-
+/* Chaining Rule */
 li.done{
     color: seagreen;
 }
-
+/* Combining Combiners Rule */
 ul p.done{
     font-size: 0.5rem;
 }

@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel = "style_sheet" href="styles.css" />
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link href="../main/styles.css" />
     <style>
-        .box{
-            background-color: blue;
-            padding: 30px;
-            border:10px solid palevioletred;
+        p{
+            color : yellow
         }
-        .inner-box{
-            margin: 100px;
-            background-color:blueviolet;
+        .inner-box p{
+            color : blue;
         }
-
-        #a0, .box{
-            background-color: red;
-            padding: 10px;
-            margin: 20px;
-            border: 5px solid black;
+        li#main.done{
+            color : green;
         }
+        li.done{
+            color : red;
+        }
+        
     </style>
+    <title>Document</title>
 </head>
 <body>
+    <p> Yellow Text </p>
     <div class="box inner-box">
-    <div id="a0">
-        <h1>
-            Hello World
-        </h1>
+        <p> Blue Text </p>
+        <ul>
+            <li class="done">Element 1</li>
+            <li id="main" class="done">Element 2</li>
+        </ul>
     </div>
-</div>
-</body>
+</body> 
 </html>
