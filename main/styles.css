@@ -1,30 +1,48 @@
-.container{
-    display: grid;
-    height: 100vh;
-    gap: 10px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: black;
-}
-
-.container > *{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.red{
+#box{
+    width: 250px;
+    height: 250px;
     background-color: red;
-    grid-column-start: 0px;
-    grid-column-end: 10px;
+    font-size: 13em;
+    text-align: center;
+    border-radius: 50px;
 }
 
-.white{
-    background-color: white;
+@keyframes slideLeft{
+    from{transform: translateX(100%);}
 }
-.blue{
-    background-color: blue;
+@keyframes slideRight{
+    to{transform: translateX(100%);}
 }
-.yellow{
-    background-color: yellow;
+@keyframes slideUp{
+    from{transform: translateY(100%);}
+}
+@keyframes slideUp{
+    to{transform: translateY(100%);}
+}
+@keyframes rotate{
+    25%{transform: rotateZ(360deg);}
+}
+@keyframes grow{
+    50%{transform: scale(2, 2);}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5);}
+}
+@keyframes color-change{
+    0%{color: blue; background-color: rgb(0, 255, 30);}
+    20%{color: rgb(51, 255, 0);}
+    40%{color: aqua;}
+    50%{color: rgb(165, 42, 163);}
+}
+@keyframes fade{
+    50%{opacity: 0;}
+}
+
+#box:hover{
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 100px yellow; background: linear-gradient(#e66465, #9198e5);}
 }

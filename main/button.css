@@ -1,0 +1,42 @@
+.box{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+body{
+    background-color: black;
+}
+
+.button{
+    background-color: black;
+    padding: 30px;
+    border-radius: 50%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    background-color: red;
+    box-shadow: 0px 0px 50px rgb(133, 128, 128);
+}
+
+.button:hover{
+    background-color: black;
+    color: red;
+    box-shadow: 0px 0px 50px red; 
+    /* animation-name: button;
+    animation-duration: 2s; */
+}
+
+.button:active{
+    background-color: black;
+}
+
+@keyframes button{
+    0%{transform: scale(0.9, 0.9);}
+    50%{transform: scale(0.5, 0.5);}
+
+}
+/* @keyframes danger{
+    50%{transform: scale(0.5, 0.5);}
+} */

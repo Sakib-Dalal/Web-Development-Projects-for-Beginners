@@ -1,0 +1,17 @@
+body{
+    background: rgb(28, 60, 60);
+}
+h1{
+    /* color: #DAC0A3; */
+    font-family: "Bitter", serif;
+    /* font-family: "Pacifico", cursive; */
+    font-weight: 400;
+    /* background-color: rgb(28, 73, 70); */
+    background-color: #DAC0A3;
+    color: rgb(28, 60, 60);
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: start;
+    box-shadow: 2px 2px 10px black;
+}

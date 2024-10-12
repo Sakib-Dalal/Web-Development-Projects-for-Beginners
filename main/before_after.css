@@ -1,0 +1,24 @@
+html{
+    font-family: Poppins, sans-serif;
+}
+
+h1{
+    background: red;
+    border-radius: 15px;
+    width: max-content;
+    padding-right: 5px;
+}
+
+h1::before{
+    content: "Hello";
+    color: red;
+    background: black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 5px;
+    transition: 100ms;
+}
+
+h1:hover::before{
+    width: 0;
+}
