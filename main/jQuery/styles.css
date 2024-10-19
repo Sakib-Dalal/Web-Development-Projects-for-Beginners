@@ -1,0 +1,13 @@
+body {
+    background-color: red;
+}
+
+.big-title {
+    color: yellow;
+    font-size: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.margin-50 {
+    margin: 50px;
+}
