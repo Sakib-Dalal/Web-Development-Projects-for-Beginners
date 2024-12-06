@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Tags</title>
+</head>
+<body>
+    <H1>EJS Tags</H1>
+    <p>Tag 1 = <%= name %></p> <!-- Treat as variable call -->
+    <p>Tag 2 = <% console.log("hello") %></p> <!-- treat as javascript code -->
+    <%% %%> <!-- Show ejs tags-->
+    <%# This is EJS comment %>
+    <%- include("header.ejs") %> <!--Include another ejs file in current ejs file -->
+
+    <!--List EJS-->
+    <ul>
+        <% for (i=0; i<fruits.length; i++) { %>
+            <li><%= fruits[i] %></li>
+        <% } %>
+    </ul>
+
+    <!-- data -->
+    <h1> <%= data.title %> </h1>
+    <% if(data.seconds % 2 === 0) { %>
+        <p> Current Seconds: <%= data.seconds %> </p>
+    <% } else { %>
+        <p>No items to display.</p>
+    <% } %>
+    <ul>
+        <% for (i=0; i<data.items.length; i++) { %>
+            <li><%= data.items[i] %></li>
+        <% } %>
+    </ul>
+    <%- data.htmlContent %>
+    <%- include("footer.ejs") %>
+</body>
+</html>
