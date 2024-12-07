@@ -5,6 +5,7 @@ const port = 3000;
 
 let bowl = ["Apple", "Orange", "Pears"];
 
+// get request 
 app.get("/", (req, res) => {
     const data = {
         title: "EJS Tags",
@@ -14,6 +15,14 @@ app.get("/", (req, res) => {
     };
     res.render("index.ejs", 
         { name: "unknown", fruits: bowl, data: data}
+    );
+});
+
+// post request 
+
+app.post("/submit", (req, res) => {
+    res.render("form.ejs", 
+      { name: req.body["name"] }
     );
 });
 
