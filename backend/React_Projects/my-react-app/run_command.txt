@@ -1,0 +1,2 @@
+npm run dev // in developer mode
+npm run build // to build app
