@@ -1,14 +1,18 @@
 import React from "react";
 
-let time = new Date().toLocaleTimeString();
 
 function App() {
+  const time = new Date().toLocaleTimeString();
+
   const [currentTime, setTime] = React.useState(time)
 
   function resetTime() {
-    time = new Date().toLocaleTimeString();
-    setTime(time);
+    const newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
   }
+
+  // auto update time - setInterval function
+  setInterval(resetTime, 1000);
 
   return (
     <div className="container">
